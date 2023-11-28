@@ -1,10 +1,8 @@
-/* Your existing CSS */
-
 body {
   font-family: sans-serif;
   padding: 30px;
   background: url(../img/birthday-background.png) no-repeat center fixed;
-  background-size: contain;
+  background-size: cover;
 }
 
 #sniffer {
@@ -15,6 +13,11 @@ body {
   position: relative;
   top: 370px;
   border-radius: 20px;
+}
+
+#sniffer:hover {
+  background-color: #08a3d9; /* Change button color on hover */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Add shadow on hover */
 }
 
 .wrapper {
@@ -110,15 +113,32 @@ h1 {
     margin-bottom: 30px;
   }
 
+  .wrapper {
+    /* Adjust the width to fit smaller screens */
+    max-width: 80%; /* You can adjust this percentage as needed */
+  }
+
   #balloon-gallery div {
     /* Adjustments for smaller screens */
     height: 80px;
     width: 80px;
     font-size: 30px;
-    margin-top: 10px;
+    margin: 2.5px 2.5px; /* Adjust margin for spacing */
   }
 
-  /* Add more adjustments as needed for smaller screens */
-}
+  /* Additional adjustments for better responsiveness */
+  #yay-no-balloons {
+    text-align: center; /* Center the content */
+  }
 
-/* Additional media queries for other screen sizes */
+  #yay-no-balloons img {
+    max-width: 80%; /* Adjust the image width */
+    margin: 20px auto; /* Center the image with margin */
+  }
+
+  #sniffer {
+    width: 80%; /* Adjust button width */
+    font-size: 24px; /* Reduce button font size */
+    margin: 20px auto; /* Center the button */
+  }
+}
